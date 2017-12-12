@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<h2>Enter two numbers you want to add: </h2>
+<div class="row">
+ <div class="col-6" style="padding:20px">
+   <label>Number1</label>
+   <input type="text"  [(ngModel)]="number1" />
+  </div>
+  
+</div>
+<div class="row">
+<div class="col-6" style="padding:20px">
+  <label>Number2</label> 
+  <input type="text"  [(ngModel)]="number2"/>
+ </div>
+
+</div>
+<div class="row">
+  <hr />
+</div>
+<div class="row">
+  <div class="col-2" style="padding:20px">
+    <input type="submit" text="submit" (click)="getResult()"/>
+  </div>
+ <hr />
+ <div class="row">
+  <div class="col-6" style="padding:20px">
+    <label style="padding:20px">Result: {{result}}</label>
+ 
+   </div>
+  
+ </div>
